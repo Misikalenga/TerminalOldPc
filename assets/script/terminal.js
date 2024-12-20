@@ -26,10 +26,44 @@ function loginsubmit(event){
             }
         }
         setTimeout(textshow, 10);
-
-
-
         loginHide.style.display= 'none'; /* cache input */
+
+        function web(){ /* afficher le site qui correspond a l'eleve */
+            let daniel = document.getElementById("daniel");
+            let geraldine = document.getElementById("geraldine");
+            let jm = document.getElementById("jm");
+            let jeremy = document.getElementById("jeremy");
+            let mykyta = document.getElementById("mykyta");
+            let reda = document.getElementById("reda");
+            let said = document.getElementById("said");
+            let samuel = document.getElementById("samuel");
+            let sola = document.getElementById("sola");
+
+            if (login == daniel) {
+                daniel.style.display ="table-cell";
+            }else if(login == geraldine) {
+                geraldine.style.display ="table-cell";
+            }else if(login == jm) {
+                jm.style.display ="table-cell";
+            }else if(login == jeremy) {
+                jeremy.style.display ="table-cell";
+            }else if(login == mykyta) {
+                mykyta.style.display ="table-cell";
+            }else if(login == reda) {
+                reda.style.display ="table-cell";
+            }else if(login == said) {
+                said.style.display ="table-cell";
+            }else if(login == samuel) {
+                samuel.style.display ="table-cell";
+            }else if(login == sola) {
+                sola.style.display ="table-cell";
+            }else{
+                daniel.style.display ="table-cell";
+            }
+
+        }
+        web();
+
     }else {
         loginNotActive.style.display= 'list-item'; /* afficher si le login n'est pas bon */
         loginHide.style.display= 'none'; /* cache input */
