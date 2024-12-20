@@ -13,8 +13,16 @@ p{
     font-size: 1em;
 }
 
+.panim{
+    display: none;
+}
+
+.textanim{
+    display: none;
+}
+
 .adress{
-    color:rgb(60, 115, 243);
+    color: rgb(60, 115, 243);
 }
 
 .useradress{
@@ -66,3 +74,55 @@ input:focus{
     font-size: 1em;
 }
 
+.windows{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: antiquewhite;
+    border: 2px;
+}
+
+table{
+    border-collapse: separate;
+    border: 5px solid rgb(92, 92, 92);
+}
+
+.cbar{
+    border:2px solid rgb(92, 92, 92);
+    height: 20px;
+    width: 20px;
+    background-color: rgb(185, 185, 185);
+
+}
+
+.dbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5px;
+}
+
+.bar{
+    border:1px solid rgb(92, 92, 92);  
+
+    height: 15px;
+    background-color: rgb(54, 91, 255);
+}
+
+h1{
+    margin: 0;
+    font-size: 15px; 
+}
+
+td{
+    border:2px solid rgb(92, 92, 92);   
+    background-color: white;
+    width: 800px;
+    height: 300px;
+}
+
+.frame{
+
+}
