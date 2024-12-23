@@ -39,23 +39,23 @@ function loginsubmit(event){
             let samuel = document.getElementById("samuel");
             let sola = document.getElementById("sola");
 
-            if (login == daniel) {
+            if (login == "daniel") {
                 daniel.style.display ="table-cell";
-            }else if(login == geraldine) {
+            }else if(login == "geraldine") {
                 geraldine.style.display ="table-cell";
-            }else if(login == jm) {
+            }else if(login == "jm") {
                 jm.style.display ="table-cell";
-            }else if(login == jeremy) {
+            }else if(login == "jeremy") {
                 jeremy.style.display ="table-cell";
-            }else if(login == mykyta) {
+            }else if(login == "mykyta") {
                 mykyta.style.display ="table-cell";
-            }else if(login == reda) {
+            }else if(login == "reda") {
                 reda.style.display ="table-cell";
-            }else if(login == said) {
+            }else if(login == "said") {
                 said.style.display ="table-cell";
-            }else if(login == samuel) {
+            }else if(login == "samuel") {
                 samuel.style.display ="table-cell";
-            }else if(login == sola) {
+            }else if(login == "sola") {
                 sola.style.display ="table-cell";
             }else{
                 daniel.style.display ="table-cell";
