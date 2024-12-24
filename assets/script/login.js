@@ -1,4 +1,5 @@
-const loginOk= ['daniel', 
+const loginOk= [
+    'daniel', 
     'géraldine',
     'geraldine',
     'jm',
@@ -9,5 +10,6 @@ const loginOk= ['daniel',
     'said',
     'saïd', 
     'samuel',
-    'sola'
+    'sola',
+    'web1'
 ];

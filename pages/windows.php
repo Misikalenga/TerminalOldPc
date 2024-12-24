@@ -26,6 +26,8 @@
             <td class="frame" id="samuel" scope="row" colspan="4"><iframe src="https://2025.webdev-cf2m.be/samuel/prefo/" width="800" height="500"> </iframe></td>
 
             <td class="frame" id="sola" scope="row" colspan="4"><iframe src="https://2025.webdev-cf2m.be/sola/prefo/projet_prefo_2/" width="800" height="500"> </iframe></td>
+
+            <td class="frame" id="web1" scope="row" colspan="4"><iframe src="https://2025.webdev-cf2m.be/" width="800" height="500"> </iframe></td>
         </tr>
     </tbody>
 </table>

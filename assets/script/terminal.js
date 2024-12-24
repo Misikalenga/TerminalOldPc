@@ -3,16 +3,18 @@ function scrollToBottom() {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
-function loginsubmit(event){
+function loginsubmit(event){ /* verifie le login est bon */
     event.preventDefault();
     let loginActive= document.querySelector(".active"); /* appel le texte a afficher si le login est bon */
     let loginNotActive= document.querySelector(".notactive"); /* appel le texte a afficher si le login n'est pas bon */
     let showlogin= document.querySelector(".showlogin"); /* appel la balise qui va remplacer l'input */
-    let login = document.getElementById("login").value;  /* enregistre dans une variable ce qu'il y a dans input */
+    let login = document.getElementById("login").value.toLowerCase();  /* enregistre en minuscule, dans une variable ce qu'il y a dans input */
+    console.log(login);
     let loginHide = document.getElementById("login"); /* appel l'input qui va etre remplacer */
     showlogin.textContent = login; /* affiche la valeur qu'il y a dans input pour le remplacer */
     if (loginOk.includes(login)) { /* verifie si la valeur de input est correcte */
         loginActive.style.display = 'list-item'; /* afficher si le login est bon */
+
         let textanim = document.querySelectorAll(".textanim");
         let positionP2 = 0;
         let speedP2 = 50;
@@ -28,8 +30,8 @@ function loginsubmit(event){
         setTimeout(textshow, 10);
         loginHide.style.display= 'none'; /* cache input */
 
-        function web(){ /* afficher le site qui correspond a l'eleve */
-            let daniel = document.getElementById("daniel");
+        function web(){ /* afficher le site qui correspond a l'eleve web2 */
+            let daniel = document.getElementById("daniel"); /* recupère la balise ou il y a le site */
             let geraldine = document.getElementById("geraldine");
             let jm = document.getElementById("jm");
             let jeremy = document.getElementById("jeremy");
@@ -38,12 +40,13 @@ function loginsubmit(event){
             let said = document.getElementById("said");
             let samuel = document.getElementById("samuel");
             let sola = document.getElementById("sola");
+            let web1 = document.getElementById("web1");
 
             if (login == "daniel") {
-                daniel.style.display ="table-cell";
-            }else if(login == "geraldine") {
+                daniel.style.display ="table-cell"; /* change le css si le input correspond a eleve */
+            }else if(login == "geraldine" || login == "géraldine") {
                 geraldine.style.display ="table-cell";
-            }else if(login == "jm") {
+            }else if(login == "jm" || login =="jean-michael") {
                 jm.style.display ="table-cell";
             }else if(login == "jeremy") {
                 jeremy.style.display ="table-cell";
@@ -51,18 +54,21 @@ function loginsubmit(event){
                 mykyta.style.display ="table-cell";
             }else if(login == "reda") {
                 reda.style.display ="table-cell";
-            }else if(login == "said") {
+            }else if(login == "said" || login == "saïd") {
                 said.style.display ="table-cell";
             }else if(login == "samuel") {
                 samuel.style.display ="table-cell";
             }else if(login == "sola") {
                 sola.style.display ="table-cell";
+            }else if(login == "web1"){
+                web1.style.display ="table-cell";
             }else{
                 daniel.style.display ="table-cell";
             }
 
         }
         web();
+
 
     }else {
         loginNotActive.style.display= 'list-item'; /* afficher si le login n'est pas bon */
@@ -94,7 +100,7 @@ document.addEventListener("DOMContentLoaded", /* attends que toute la page soit 
                 setTimeout(writeshow2, speed);
             }
         }
-        setTimeout(writeshow2, 2500);
+        setTimeout(writeshow2, 2500); /* annimation du texte write2 lettre par lettre */
 
         let panim = document.querySelectorAll(".panim");
         let positionP = 0;
