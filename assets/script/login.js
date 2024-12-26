@@ -11,5 +11,5 @@ const loginOk= [
     'saïd', 
     'samuel',
     'sola',
-    'web1'
+    'prefo'
 ];

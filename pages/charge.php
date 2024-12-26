@@ -1,15 +1,15 @@
 <p class="textanim" >eading package lists...</p>
 <p class="textanim" >Done Building dependency tree...</p>
 <p class="textanim" >Done The following additional packages will be installed:</p>
-<p class="textanim" >n amd64 libntfs-3g89t64 amd64 1:2022.10.3-1.2ubuntu3 [159 kB]</p>
-<p class="textanim" >n amd64 ntfs-3g amd64 1:2022.10.3-1.2ubuntu3 [406 kB]</p>
-<p class="textanim" >n amd64 libasound2-data all 1.2.11-1build2 [21.0 kB]</p>
-<p class="textanim" >n amd64 libasound2t64 amd64 1.2.11-1build2 [399 kB]</p>
-<p class="textanim" >n amd64 bluez amd64 5.72-0ubuntu5 [1359 kB]</p>
-<p class="textanim" >n amd64 libaccountsservice0 amd64 23.13.9-2ubuntu6 [63.8 kB]</p>
-<p class="textanim" >n amd64 accountsservice amd64 23.13.9-2ubuntu6 [71.1 kB]</p>
-<p class="textanim" >n amd64 language-selector-common all 0.225 [258 kB]</p>
-<p class="textanim" >n amd64 libsane-common all 1.2.1-7build4 [906 kB]</p>
+<p class="textanim" >in amd64 libntfs-3g89t64 amd64 1:2022.10.3-1.2ubuntu3 [159 kB]</p>
+<p class="textanim" >in amd64 ntfs-3g amd64 1:2022.10.3-1.2ubuntu3 [406 kB]</p>
+<p class="textanim" >in amd64 libasound2-data all 1.2.11-1build2 [21.0 kB]</p>
+<p class="textanim" >in amd64 libasound2t64 amd64 1.2.11-1build2 [399 kB]</p>
+<p class="textanim" >in amd64 bluez amd64 5.72-0ubuntu5 [1359 kB]</p>
+<p class="textanim" >in amd64 libaccountsservice0 amd64 23.13.9-2ubuntu6 [63.8 kB]</p>
+<p class="textanim" >in amd64 accountsservice amd64 23.13.9-2ubuntu6 [71.1 kB]</p>
+<p class="textanim" >in amd64 language-selector-common all 0.225 [258 kB]</p>
+<p class="textanim" >in amd64 libsane-common all 1.2.1-7build4 [906 kB]</p>
 <p class="textanim" >in amd64 poppler-data all 0.4.12-1 [2060 kB]</p>
 <p class="textanim" >in amd64 update-inetd all 4.53 [24.0 kB]</p>
 <p class="textanim" >in amd64 libieee1284-3t64 amd64 0.2.11-14.1build1 [22.0 kB]</p>
@@ -93,5 +93,5 @@
 <p class="textanim" >ain amd64 usb-modeswitch-data all 20191128-6 [30.3 kB]</p>
 <p class="textanim" >ain amd64 usb-modeswitch amd64 2.6.1-3ubuntu3 [44.0 kB]</p>
 <p class="textanim" >pdates/main amd64 xserver-xorg-legacy amd64 2:21.1.12-1ubuntu1.1 [40.4 kB]</p>
-<p class="textanim" ><span class="useradress">root@laravel-demo:</span><span class="adress">/var/www/laravel-demo/</span>$<input type="text" name="login"></p>
+<p class="textanim" ><span class="useradress">root@terminal-prefo:</span><span class="adress">/var/www/terminal-prefo/</span>$<input type="text" name="login"></p>
 <div class="textanim" ><?php include 'windows.php' ?></div>

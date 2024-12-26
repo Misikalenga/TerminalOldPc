@@ -40,30 +40,41 @@ function loginsubmit(event){ /* verifie le login est bon */
             let said = document.getElementById("said");
             let samuel = document.getElementById("samuel");
             let sola = document.getElementById("sola");
-            let web1 = document.getElementById("web1");
+            let prefo = document.getElementById("prefo");
 
             if (login == "daniel") {
-                daniel.style.display ="table-cell"; /* change le css si le input correspond a eleve */
+                daniel.style.display ="table-cell"; /* changer le css si le input correspond a l'eleve */
+                document.querySelector(".texticon").textContent =" Daniel ";
             }else if(login == "geraldine" || login == "géraldine") {
                 geraldine.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Géraldine ";
             }else if(login == "jm" || login =="jean-michael") {
                 jm.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" JM ";
             }else if(login == "jeremy") {
                 jeremy.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Jeremy ";
             }else if(login == "mykyta") {
                 mykyta.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Mykyta ";
             }else if(login == "reda") {
                 reda.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Reda ";
             }else if(login == "said" || login == "saïd") {
                 said.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Said ";
             }else if(login == "samuel") {
                 samuel.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Samuel ";
             }else if(login == "sola") {
                 sola.style.display ="table-cell";
-            }else if(login == "web1"){
-                web1.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Sola ";
+            }else if(login == "prefo"){
+                prefo.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" web1 et web2 ";
             }else{
                 daniel.style.display ="table-cell";
+                document.querySelector(".texticon").textContent =" Daniel ";
             }
 
         }
@@ -75,10 +86,14 @@ function loginsubmit(event){ /* verifie le login est bon */
         loginHide.style.display= 'none'; /* cache input */
     }
 }
+
+
+
+
 document.addEventListener("DOMContentLoaded", /* attends que toute la page soit chargé pour appliquer la fonction */
     function () {
 
-        let write = "init Larevel-Demo"; /* texte a afficher */
+        let write = "init Terminal-prefo Daniel"; /* texte a afficher */
         let speed = 60; /* durée de l'animation */
         let position = 0; /* ou commencer l'animation par rapport au texte*/
 
@@ -113,7 +128,7 @@ document.addEventListener("DOMContentLoaded", /* attends que toute la page soit 
                 setTimeout(pshow, speedP);
             }
         }
-        setTimeout(pshow, 2000);
+        setTimeout(pshow, 2000); /*affiche le texte paragraphe par paragraphe*/
 
         let textanim = document.querySelectorAll(".textanim");
         let positionP2 = 0;
@@ -123,11 +138,11 @@ document.addEventListener("DOMContentLoaded", /* attends que toute la page soit 
             if (positionP2 < textanim.length) {
                 textanim[positionP2].style.display ="block";
                 positionP2++;
-                setTimeout(textshow, speedP2);
+                setTimeout(textshow, speedP2); /*affiche le texte de chargement ligne par ligne */
             }
         }
-        setTimeout(textshow, 10000);
 
-        setTimeout(function(){document.getElementById("login").focus();},4500);
+
+        setTimeout(function(){document.getElementById("login").focus();},4500); /*met le curser dans input apres qu'il s'affiche*/
     }
 );
